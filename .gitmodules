@@ -1,11 +1,11 @@
-[submodule "vim/bundle/dracula-theme"]
-	path = vim/bundle/dracula-theme
+[submodule "vim/bundle/dracula"]
+	path = vim/bundle/dracula
 	url = git@github.com:dracula/vim.git
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
-[submodule "vim/bundle/fzf.vim"]
-	path = vim/bundle/fzf.vim
+[submodule "vim/bundle/fzf"]
+	path = vim/bundle/fzf
 	url = https://github.com/junegunn/fzf.vim.git
 [submodule "vim/bundle/vim-jsx"]
 	path = vim/bundle/vim-jsx
