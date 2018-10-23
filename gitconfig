@@ -1,0 +1,17 @@
+[user]
+  name = Vinícius Garcia
+  email = vingarcia00@gmail.com
+[push]
+	default = simple
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+[alias]
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|production' | xargs -n 1 git branch -d"

@@ -1,0 +1,4 @@
+!vim/**
+!*.vim
+documents/
+vim/.netrwhist

@@ -1,0 +1,18 @@
+:map u :up<ENTER>
+:map d :down<ENTER>
+:map . :next<ENTER>
+:map m :next<ENTER>
+:map , :step<ENTER>
+:map s :step<ENTER>
+:map p ip<Space>
+:map r :run<ENTER>
+:map f :finish<ENTER>
+:map <C-d> :quit<ENTER>
+:map y iy<ENTER><ESC>
+:map N in<ENTER><ESC>
+:noremap <ENTER> <ENTER><ESC>
+:noremap <C-d> :sh<ENTER>
+ib main<ENTER>
+
+
+
