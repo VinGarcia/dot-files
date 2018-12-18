@@ -40,7 +40,7 @@ if [ -f /etc/bashrc ]; then
 	source /etc/bashrc
 fi
 
-export PATH=$PATH:/home/garcia/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -48,3 +48,5 @@ export PATH=$PATH:/home/garcia/.local/bin
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+#export PATH="$PATH:$(python -m site --user-base)/bin)"

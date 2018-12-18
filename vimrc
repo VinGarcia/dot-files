@@ -144,11 +144,7 @@ imap <C-v> <esc><C-v>a
 " Force saving when file is opened read-only by accident:
 map <Leader>s :w !sudo tee %<enter>
 
-" vim-airline configurations
-" (Add useful information on the bottom of the editor):
-set t_Co=256
-let g:Powerline_symbols = "fancy"
-let g:airline_powerline_fonts = 1
+" Setup the status bar on the bottom:
 set laststatus=2
 
 " * * * * * End of Great Mappings * * * * * "
@@ -248,3 +244,6 @@ vnoremap <Leader><Leader> :FZF<enter>
 
 " JSX
 let g:jsx_ext_required = 0
+
+" Vim-Go Tools
+let g:go_fmt_command = "goimports"
