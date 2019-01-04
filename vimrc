@@ -113,7 +113,7 @@ map <Leader>s :w !sudo tee %<enter>
 map <Leader>, :set ts=2 sw=2 sts=2<enter>
 map <Leader>. :set ts=4 sw=4 sts=4<enter>
 
-" * * * * * Plugin Configuratios * * * * *
+" * * * * * Plugin Configurations: * * * * *
 
 " ALE Linter
 map <Leader>d :ALEDetail<enter>
