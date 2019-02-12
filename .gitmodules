@@ -21,4 +21,7 @@
 	url = https://github.com/elixir-lang/vim-elixir
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
-	url = git@github.com:leafgarland/typescript-vim.git
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vim/bundle/vim-coffee-script"]
+	path = vim/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
