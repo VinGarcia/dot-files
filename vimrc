@@ -7,7 +7,6 @@ execute pathogen#infect()
 "
 
 " Autodetect filetypes:
-filetype on
 filetype plugin on
 filetype indent on
 
@@ -49,6 +48,20 @@ map <Leader>l :tabn<enter>
 " Move tabs left and right:
 noremap <Leader><C-h> :-tabmove<enter>
 noremap <Leader><C-l> :+tabmove<enter>
+
+"
+" Cool features to have:
+"
+
+" Toggle to bash with <C-d>:
+noremap <C-d> :sh<enter>
+
+" Force saving when file is opened read-only by accident:
+map <Leader>s :w !sudo tee %<enter>
+
+" Easily toogle tab size from 2 to 4 spaces:
+map <Leader>, :set ts=2 sw=2 sts=2<enter>
+map <Leader>. :set ts=4 sw=4 sts=4<enter>
 
 "
 " Mappings for preventing common mistakes:
@@ -98,20 +111,6 @@ imap <C-q> <esc><C-q>
 " ctrl-s saves
 map <C-s> :w<enter>
 imap <C-s> <esc><C-s>a
-
-"
-" Cool features to have:
-"
-
-" Toggle to bash with <C-d>:
-noremap <C-d> :sh<enter>
-
-" Force saving when file is opened read-only by accident:
-map <Leader>s :w !sudo tee %<enter>
-
-" Easily toogle tab size from 2 to 4 spaces:
-map <Leader>, :set ts=2 sw=2 sts=2<enter>
-map <Leader>. :set ts=4 sw=4 sts=4<enter>
 
 " * * * * * Plugin Configurations: * * * * *
 

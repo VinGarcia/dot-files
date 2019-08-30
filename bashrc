@@ -19,10 +19,6 @@ export GOPATH=~/projects/go
 
 #export BC_ENV_ARGS
 BC_ENV_ARGS=$(<<< scale=2) && export BC_ENV_ARGS
-export SVN_EDITOR=vim
-export GIT_EDITOR=vim
-export VISUAL=vim
-export EDITOR=vim
 set -o vi
 
 #export WORKDIR=`cat /home/fox/.workdir`

@@ -7,6 +7,7 @@ let s:comment_map = {
     \   "go": '\/\/',
     \   "java": '\/\/',
     \   "javascript": '\/\/',
+    \   "typescript": '\/\/',
     \   "scala": '\/\/',
     \   "php": '\/\/',
     \   "po": '#',
