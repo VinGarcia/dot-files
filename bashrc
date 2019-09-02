@@ -46,3 +46,9 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH="$PATH:$HOME/.rvm/bin"
 
 #export PATH="$PATH:$(python -m site --user-base)/bin)"
+
+export SVN_EDITOR=vim
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+
