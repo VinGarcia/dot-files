@@ -56,6 +56,9 @@ noremap <Leader><C-l> :+tabmove<enter>
 " Toggle to bash with <C-d>:
 noremap <C-d> :sh<enter>
 
+" Update the :sh command to open a login shell (useful when using rvm)
+set shell=bash\ -l
+
 " Force saving when file is opened read-only by accident:
 map <Leader>s :w !sudo tee %<enter>
 
@@ -196,4 +199,3 @@ highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Re
 " highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
-

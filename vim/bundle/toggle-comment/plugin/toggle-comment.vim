@@ -21,6 +21,7 @@ let s:comment_map = {
     \   "profile": '#',
     \   "bashrc": '#',
     \   "bash_profile": '#',
+    \   "elixir": '#',
     \   "mail": '>',
     \   "eml": '>',
     \   "bat": 'REM',
