@@ -13,9 +13,6 @@
 [submodule "vim/bundle/kotlin-vim"]
 	path = vim/bundle/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
-[submodule "vim/bundle/vim-go"]
-	path = vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule "vim/bundle/vim-elixir"]
 	path = vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir
@@ -25,3 +22,6 @@
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/govim"]
+	path = vim/bundle/govim
+	url = https://github.com/govim/govim.git
