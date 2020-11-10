@@ -17,3 +17,5 @@
   cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|production' | xargs -n 1 git branch -d"
 [url "ssh://git@github.com/ditointernet"]
 	insteadOf = https://github.com/ditointernet
+[pull]
+	rebase = false

@@ -3,4 +3,5 @@
 *.vim
 *.vscode/
 makefile
+hide.*
 
