@@ -131,6 +131,8 @@ let g:jsx_ext_required = 0
 
 " Vim-Go Tools
 let g:go_fmt_command = "goimports"
+map <Leader>d :GoDef<enter>
+map <Leader>b :GoDefPop<enter>
 
 " Dracula color scheme plugin:
 color dracula
