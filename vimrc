@@ -121,18 +121,29 @@ imap <C-s> <esc><C-s>a
 map <Leader>d :ALEDetail<enter>
 map <Leader>f :ALEGoToDefinitionInTab<enter>
 map <Leader>i :ALEHover<enter>
+noremap <Leader><Leader>n :ALENext<enter>
+let g:ale_linters = {
+\   'go': ['gobuild'],
+\}
 
 " FZF
-nnoremap <Leader><Leader> :FZF<enter>
-vnoremap <Leader><Leader> :FZF<enter>
+nnoremap <Leader><Leader>p :FZF<enter>
+vnoremap <Leader><Leader>p :FZF<enter>
 
 " JSX
 let g:jsx_ext_required = 0
 
-" Vim-Go Tools
+" Vim-Go configs
 let g:go_fmt_command = "goimports"
 map <Leader>d :GoDef<enter>
 map <Leader>b :GoDefPop<enter>
+map <Leader>c :GoCoverageToggle<enter>
+map <f9> :GoBuild<enter>
+
+" GoVim Govim configs
+" nnoremap <buffer> <silent> <Leader>d :GOVIMGoToDef<enter>
+" nnoremap <buffer> <silent> <Leader>b :GOVIMGoToPrevDef<enter>
+" nnoremap <buffer> <silent> <Leader>i :GOVIMImplements<enter>
 
 " Dracula color scheme plugin:
 color dracula
@@ -162,9 +173,9 @@ noremap <C-k> <C-w>k
 " paste with <Space>p
 " (This is good when you don't want to
 " loose your copy when deleting)
-vmap <Leader>y "wy
-vmap <Leader>p "wp
-map <Leader>p "wp
+vmap <Leader>y "yy
+vmap <Leader>p "yp
+map <Leader>p "yp
 
 " Shortcut to go to next buffer when
 " editing multiple files in a sequence:
@@ -173,6 +184,19 @@ map <Leader>n :n<enter>
 " Shortcut to run macros on w and e:
 map ; @w
 map ´ @e
+
+" Searchs vertically downward for the next non-blank character:
+nnoremap dc /\%<C-R>=virtcol(".")<CR>v\S<CR>
+
+" Searchs vertically upward for the next non-blank character:
+nnoremap cd ?\%<C-R>=virtcol(".")<CR>v\S<CR>
+
+" Search upwards for the first line starting with a non-space character.
+nnoremap 1ff ?\%1v\S<cr>
+
+" Increase maxmempattern default value from 1000 to 4000
+" so that syntax highlight won't break on big Go files.
+set maxmempattern=4000
 
 " Making alias for syntax highlighting by extension:
 au BufRead,BufNewFile *.spy setfiletype javascript
