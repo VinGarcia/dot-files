@@ -118,9 +118,6 @@ imap <C-s> <esc><C-s>a
 " * * * * * Plugin Configurations: * * * * *
 
 " ALE Linter
-map <Leader>d :ALEDetail<enter>
-map <Leader>f :ALEGoToDefinitionInTab<enter>
-map <Leader>i :ALEHover<enter>
 noremap <Leader><Leader>n :ALENext<enter>
 let g:ale_linters = {
 \   'go': ['gobuild'],
@@ -194,21 +191,12 @@ nnoremap cd ?\%<C-R>=virtcol(".")<CR>v\S<CR>
 " Search upwards for the first line starting with a non-space character.
 nnoremap 1ff ?\%1v\S<cr>
 
+nnoremap <leader>* viw"ly/^}\\|\<<C-r>l\><enter>
+nnoremap <leader># viw"ly?^}\\|\<<C-r>l\><enter>
+
 " Increase maxmempattern default value from 1000 to 4000
 " so that syntax highlight won't break on big Go files.
 set maxmempattern=4000
-
-" Making alias for syntax highlighting by extension:
-au BufRead,BufNewFile *.spy setfiletype javascript
-au BufRead,BufNewFile *.ts setfiletype javascript
-
-au BufRead,BufNewFile *.inc setfiletype cpp
-
-au BufRead,BufNewFile *.kv setfiletype python
-
-au BufRead,BufNewFile *.lock setfiletype json
-
-au BufRead,BufNewFile *.spacemacs setfiletype lisp
 
 " Remove trailing spaces on save
 fun! <SID>StripTrailingWhitespaces()

@@ -15,7 +15,14 @@
   editor = vim
 [alias]
   cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|production' | xargs -n 1 git branch -d"
+  edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; vim `f`"
+  add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
 [url "ssh://git@github.com/ditointernet"]
 	insteadOf = https://github.com/ditointernet
 [pull]
 	rebase = false
+[init]
+	defaultBranch = master
+[advice]
+  detachedHead = false
+
