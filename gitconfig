@@ -25,4 +25,5 @@
 	defaultBranch = master
 [advice]
   detachedHead = false
-
+[log]
+	date = iso

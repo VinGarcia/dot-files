@@ -1,7 +1,7 @@
-*.swp
-*.swo
-*.vim
+**/*.swp
+**/*.swo
+**/*.vim
 *.vscode/
 makefile
-hide.*
-
+**/hide.*
+forks
