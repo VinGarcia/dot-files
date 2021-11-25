@@ -41,7 +41,7 @@ let mapleader = "\<Space>"
 noremap tt :tab split<enter>
 noremap tT :tab split<enter>:-tabmove<enter>
 
-" Goto next or previous tab:
+" Go to next or previous tab:
 map <Leader>h :tabp<enter>
 map <Leader>l :tabn<enter>
 
@@ -127,6 +127,9 @@ let g:ale_linters = {
 nnoremap <Leader><Leader>p :FZF<enter>
 vnoremap <Leader><Leader>p :FZF<enter>
 
+" tig blame its not a plugin but very useful
+nnoremap <Leader><Leader>b :execute ":!tig blame % +" . line('.')<enter>
+
 " JSX
 let g:jsx_ext_required = 0
 
@@ -136,6 +139,7 @@ map <Leader>d :GoDef<enter>
 map <Leader>b :GoDefPop<enter>
 map <Leader>c :GoCoverageToggle<enter>
 map <f9> :GoBuild<enter>
+map <Leader><Leader>d :call go#lsp#Exit()<enter>
 
 " GoVim Govim configs
 " nnoremap <buffer> <silent> <Leader>d :GOVIMGoToDef<enter>
@@ -148,6 +152,9 @@ color dracula
 " color default
 
 " * * * * * Personal configurations: * * * * * "
+
+" differentiate spaces and tabs
+set list
 
 " customized tabs size:
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2
