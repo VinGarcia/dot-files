@@ -25,6 +25,21 @@ set autoindent
 " Setup the status bar on the bottom:
 set laststatus=2
 
+"
+" Mappings for preventing common mistakes:
+"
+
+" Prevent typos (e.g. `:Q` or `:Wq` or `:WQ` will just work):
+command Q q
+command W w
+command WQ wq
+command Wq wq
+
+" Stop that stupid window from popping up:
+map q: :q
+map K k
+
+
 " * * * * * Great Mappings below: * * * * * "
 "
 " Mappings that make vim a lot cooler
@@ -65,20 +80,6 @@ map <Leader>s :w !sudo tee %<enter>
 " Easily toogle tab size from 2 to 4 spaces:
 map <Leader>, :set ts=2 sw=2 sts=2<enter>
 map <Leader>. :set ts=4 sw=4 sts=4<enter>
-
-"
-" Mappings for preventing common mistakes:
-"
-
-" Prevent typos (e.g. `:Q` or `:Wq` or `:WQ` will just work):
-command Q q
-command W w
-command WQ wq
-command Wq wq
-
-" Stop that stupid window from popping up:
-map q: :q
-map K k
 
 "
 " Restoring normal keyboard shortcuts:
