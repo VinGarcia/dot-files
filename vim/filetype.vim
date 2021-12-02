@@ -11,3 +11,4 @@ au BufRead,BufNewFile env setfiletype sh
 au BufRead,BufNewFile env.example setfiletype sh
 au BufRead,BufNewFile Dockerfile* setfiletype dockerfile
 au BufRead,BufNewFile *.toml setfiletype gitconfig
+au BufRead,BufNewFile *.toml.example setfiletype gitconfig
