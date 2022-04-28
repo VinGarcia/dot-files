@@ -137,7 +137,7 @@ let g:jsx_ext_required = 0
 " Vim-Go configs
 let g:go_fmt_command = "goimports"
 map <Leader>d :GoDef<enter>
-map <Leader>b :GoDefPop<enter>
+map <Leader>D :GoDefPop<enter>
 map <Leader>c :GoCoverageToggle<enter>
 map <f9> :GoBuild<enter>
 map <Leader><Leader>d :call go#lsp#Exit()<enter>
