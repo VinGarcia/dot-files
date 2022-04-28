@@ -12,3 +12,4 @@ au BufRead,BufNewFile env.example setfiletype sh
 au BufRead,BufNewFile Dockerfile* setfiletype dockerfile
 au BufRead,BufNewFile *.toml setfiletype gitconfig
 au BufRead,BufNewFile *.toml.example setfiletype gitconfig
+au BufRead,BufNewFile Caddyfile setfiletype python
