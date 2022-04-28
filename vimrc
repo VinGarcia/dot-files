@@ -25,6 +25,10 @@ set autoindent
 " Setup the status bar on the bottom:
 set laststatus=2
 
+" Fixing behavior on MacOS to work like on linux:
+set backspace=indent,eol,start " (make backspace work on insert mode)
+set ruler " (make status bar show line number)
+
 "
 " Mappings for preventing common mistakes:
 "
@@ -156,6 +160,7 @@ color dracula
 
 " differentiate spaces and tabs
 set list
+set listchars=eol:\ ,tab:ˑ\
 
 " customized tabs size:
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2
