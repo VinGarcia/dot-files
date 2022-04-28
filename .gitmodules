@@ -4,8 +4,8 @@
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
-[submodule "vim/bundle/fzf"]
-	path = vim/bundle/fzf
+[submodule "vim/bundle/fzf.vim"]
+	path = vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
 [submodule "vim/bundle/vim-jsx"]
 	path = vim/bundle/vim-jsx
@@ -25,3 +25,9 @@
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "vim/bundle/fzf"]
+	path = vim/bundle/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "vim/bundle/vim-terraform"]
+	path = vim/bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
