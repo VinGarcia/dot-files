@@ -124,9 +124,6 @@ imap <C-s> <esc><C-s>a
 
 " ALE Linter
 noremap <Leader><Leader>n :ALENext<enter>
-let g:ale_linters = {
-\   'go': ['gobuild'],
-\}
 
 " FZF
 nnoremap <Leader><Leader>p :FZF<enter>
@@ -137,19 +134,6 @@ nnoremap <Leader><Leader>b :execute ":!tig blame % +" . line('.')<enter>
 
 " JSX
 let g:jsx_ext_required = 0
-
-" Vim-Go configs
-let g:go_fmt_command = "goimports"
-map <Leader>d :GoDef<enter>
-map <Leader>D :GoDefPop<enter>
-map <Leader>c :GoCoverageToggle<enter>
-map <f9> :GoBuild<enter>
-map <Leader><Leader>d :call go#lsp#Exit()<enter>
-
-" GoVim Govim configs
-" nnoremap <buffer> <silent> <Leader>d :GOVIMGoToDef<enter>
-" nnoremap <buffer> <silent> <Leader>b :GOVIMGoToPrevDef<enter>
-" nnoremap <buffer> <silent> <Leader>i :GOVIMImplements<enter>
 
 " Dracula color scheme plugin:
 color dracula
