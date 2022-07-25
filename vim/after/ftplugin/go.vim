@@ -5,11 +5,11 @@ let g:ale_linters = {
 
 " Vim-Go configs
 let g:go_fmt_command = "goimports"
-map <Leader>d :GoDef<enter>
-map <Leader>D :GoDefPop<enter>
-map <Leader>c :GoCoverageToggle<enter>
-map <f9> :GoBuild<enter>
-map <Leader><Leader>d :call go#lsp#Exit()<enter>
+map <buffer> <Leader>d :GoDef<enter>
+map <buffer> <Leader>D :GoDefPop<enter>
+map <buffer> <Leader>c :GoCoverageToggle<enter>
+map <buffer> <f9> :GoBuild<enter>
+map <buffer> <Leader><Leader>d :call go#lsp#Exit()<enter>
 
 " GoVim Govim configs
 " nnoremap <buffer> <silent> <Leader>d :GOVIMGoToDef<enter>

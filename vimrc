@@ -144,7 +144,7 @@ color dracula
 
 " differentiate spaces and tabs
 set list
-set listchars=eol:\ ,tab:ˑˑ
+set listchars=eol:\ ,tab:ˑ\ ,trail:«
 
 " customized tabs size:
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2
