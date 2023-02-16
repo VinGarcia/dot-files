@@ -1,6 +1,6 @@
 [submodule "vim/bundle/dracula"]
 	path = vim/bundle/dracula
-	url = git@github.com:dracula/vim.git
+	url = https://github.com/dracula/vim.git
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
