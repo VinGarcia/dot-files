@@ -56,4 +56,7 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
 
-PS1="\[\033[00;36m\]\w\[\033[01;32m\]\[\033[02;30m\]\$(parse_git_branch)\[\033[01;32m\]\n\[\033[01;39m\]$(echo $'\u276f')\[\033[00m\] "
+# Comment the separator you don't want to use (in some systems that character doesn't render correcly):
+SEP=$'\u276f'
+SEP=❯
+PS1="\[\033[00;36m\]\w\[\033[01;32m\]\[\033[02;29m\]\$(parse_git_branch)\[\033[01;32m\]\n\[\033[01;39m\]$(echo $SEP)\[\033[00m\] "
