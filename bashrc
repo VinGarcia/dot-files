@@ -8,6 +8,9 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+alias b='base64'
+alias k='kubectl'
+
 if [ -f ~/.profile ]; then
   source ~/.profile
 fi
