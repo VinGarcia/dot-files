@@ -10,6 +10,7 @@ alias mv='mv -i'
 
 alias b='base64'
 alias k='kubectl'
+alias grep='grep --color'
 
 if [ -f ~/.profile ]; then
   source ~/.profile
@@ -31,6 +32,9 @@ export ENGLISH_SCRIPT_HOME=/home/fox/serios/workspace/english-script
 export WORKON_HOME=/home/workspace/envs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 #source /usr/bin/virtualenvwrapper.sh
+
+# This will stop the message "The default interactive shell is now zsh." on macOS
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -61,3 +65,6 @@ parse_git_branch() {
 SEP=$'\u276f'
 SEP=❯
 PS1="\[\033[00;36m\]\w\[\033[01;32m\]\[\033[02;29m\]\$(parse_git_branch)\[\033[01;32m\]\n\[\033[01;39m\]$(echo $SEP)\[\033[00m\] "
+
+export PATH=$PATH:~/go/bin
+export PATH=$PATH:~/bin
