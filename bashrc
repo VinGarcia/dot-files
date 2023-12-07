@@ -1,9 +1,3 @@
-alias netlex='cd /home/fox/projects/netlex/netlex/'
-alias js='cd /home/fox/projects/netlex/netlex/resources/assets/js/angular/modules/'
-alias views='cd /home/fox/projects/netlex/netlex/resources/views/'
-alias http='cd /home/fox/projects/netlex/netlex/app/Http/'
-alias app='cd /home/fox/projects/netlex/netlex/app/Http/'
-
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
