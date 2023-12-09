@@ -5,6 +5,7 @@ alias mv='mv -i'
 alias b='base64'
 alias k='kubectl'
 alias grep='grep --color'
+alias oflux='flux -n ops'
 
 if [ -f ~/.profile ]; then
   source ~/.profile
@@ -15,7 +16,6 @@ stty -ixon
 
 #export BC_ENV_ARGS
 BC_ENV_ARGS=$(<<< scale=2) && export BC_ENV_ARGS
-set -o vi
 
 #export WORKDIR=`cat /home/fox/.workdir`
 
