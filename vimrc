@@ -39,10 +39,9 @@ command W w
 command WQ wq
 command Wq wq
 
-" Stop that stupid window from popping up:
+" Stop that stupid window from popping up by accident:
 map q: :q
 map K k
-
 
 " * * * * * Great Mappings below: * * * * * "
 "
@@ -52,13 +51,16 @@ map K k
 " Map leader to space:
 let mapleader = "\<Space>"
 
+" Remap the command listing command to something harder to run by accident:
+noremap <Leader>q q:
+
 "
 " Mappings for working with multiple tabs:
 "
 
 " Open on a new tab with tt or tT:
-noremap tt :tab split<enter>
-noremap tT :tab split<enter>:-tabmove<enter>
+noremap > :tab split<enter>
+noremap <lt> :tab split<enter>:-tabmove<enter>
 
 " Go to next or previous tab:
 map <Leader>h :tabp<enter>
@@ -140,15 +142,19 @@ color dracula
 " Or if you don't want to install the dracula-vim plugin:
 " color default
 
+" Vim Go
+" This one can help speed up the syntax highlight on Mac, not sure why
+set re=0
+
 " * * * * * Personal configurations: * * * * * "
 
 " differentiate spaces and tabs
 set list
-set listchars=eol:\ ,tab:ˑ\ ,trail:«
+set listchars=eol:\ ,tab:\ -,trail:«
 
 " customized tabs size:
-set expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType make setlocal noexpandtab
+set tabstop=2 shiftwidth=2 softtabstop=2
+" autocmd FileType make setlocal noexpandtab
 
 " Disable the single buffer command, to prevent it from being
 " pressed by accident:
