@@ -1,11 +1,22 @@
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias python='python3'
 
 alias b='base64'
-alias k='kubectl'
 alias grep='grep --color'
+
 alias oflux='flux -n ops'
+alias of='flux -n ops'
+alias f='flux'
+alias rec='flux reconcile'
+
+alias dc='docker-compose'
+alias k='kubectl'
+if $(which kubectl > /dev/null); then
+	source <(kubectl completion bash)
+	source <(kubectl completion bash | sed 's/kubectl/k/g')
+fi
 
 if [ -f ~/.profile ]; then
   source ~/.profile
