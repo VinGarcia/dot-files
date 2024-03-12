@@ -150,7 +150,7 @@ set re=0
 
 " differentiate spaces and tabs
 set list
-set listchars=eol:\ ,tab:\ -,trail:«
+set listchars=eol:\ ,tab:ˑ\ ,trail:«
 
 " customized tabs size:
 set tabstop=2 shiftwidth=2 softtabstop=2
