@@ -1,10 +1,12 @@
 " ALE Linter
 let g:ale_linters = {
-\   'go': ['gobuild'],
+\   'go': ['gobuild', 'golangci-lint'],
 \}
 
 " Vim-Go configs
 let g:go_fmt_command = "goimports"
+map <C-i> :GoDef<enter>
+map <C-o> :GoDefPop<enter>
 map <buffer> <Leader>d :GoDef<enter>
 map <buffer> <Leader>D :GoDefPop<enter>
 map <buffer> <Leader>c :GoCoverageToggle<enter>
