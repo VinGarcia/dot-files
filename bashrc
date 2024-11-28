@@ -13,7 +13,7 @@ alias rec='flux reconcile'
 
 alias dc='docker-compose'
 alias k='kubectl'
-if $(which kubectl > /dev/null); then
+if $(which kubectl 2> /dev/null); then
 	source <(kubectl completion bash)
 	source <(kubectl completion bash | sed 's/kubectl/k/g')
 fi
@@ -69,7 +69,7 @@ parse_git_branch() {
 # Comment the separator you don't want to use (in some systems that character doesn't render correcly):
 SEP=$'\u276f'
 SEP=❯
-PS1="\[\033[00;36m\]\w\[\033[01;32m\]\[\033[02;29m\]\$(parse_git_branch)\[\033[01;32m\]\n\[\033[01;39m\]$(echo $SEP)\[\033[00m\] "
+PS1="\[\033[00;36m\]\w\[\033[01;32m\]\[\033[02;29m\]\`parse_git_branch\`\[\033[01;32m\]\n\[\033[01;39m\]$(echo $SEP)\[\033[00m\] "
 
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/bin
