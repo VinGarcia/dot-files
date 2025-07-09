@@ -1,7 +1,10 @@
+source ~/.local.bashrc
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias python='python3'
+alias neo='nvim'
 
 alias b='base64'
 alias grep='grep --color'
@@ -13,9 +16,8 @@ alias rec='flux reconcile'
 
 alias dc='docker-compose'
 alias k='kubectl'
-if $(which kubectl 2> /dev/null); then
+if command -v kubectl > /dev/null; then
 	source <(kubectl completion bash)
-	source <(kubectl completion bash | sed 's/kubectl/k/g')
 fi
 
 if [ -f ~/.profile ]; then
@@ -46,8 +48,6 @@ if [ -f /etc/bashrc ]; then
 	source /etc/bashrc
 fi
 
-export PATH=$PATH:$HOME/.local/bin
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # [[ -s "$HOME/.gem/ruby/2.5.0/bin" ]] && export PATH="$PATH:$HOME/.gem/ruby/2.5.0/bin"
@@ -73,3 +73,5 @@ PS1="\[\033[00;36m\]\w\[\033[01;32m\]\[\033[02;29m\]\`parse_git_branch\`\[\033[0
 
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/bin
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

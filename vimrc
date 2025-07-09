@@ -194,6 +194,7 @@ nnoremap cd ?\%<C-R>=virtcol(".")<CR>v\S<CR>
 " Search upwards for the first line starting with a non-space character.
 nnoremap 1ff ?\%1v\S<cr>
 
+" Search the current word up or down but stop on the end of a function
 nnoremap <leader>* viw"ly/^}\\|\<<C-r>l\><enter>
 nnoremap <leader># viw"ly?^}\\|\<<C-r>l\><enter>
 
