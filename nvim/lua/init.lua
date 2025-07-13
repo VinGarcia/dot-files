@@ -1,4 +1,16 @@
 
+--
+-- Setting up some basic configs:
+--
+
+-- The leader key is used in combination with other keys to
+-- generate shortcuts below in this configuration.
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- This disables mouse interaction which is confusing and not helpful at all
+vim.opt.mouse = ""
+
 require("config.lazy")
 
 require("codecompanion").setup({

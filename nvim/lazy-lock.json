@@ -1,4 +1,5 @@
 {
+  "ale": { "branch": "master", "commit": "4b1bf3ee8f8516dc52d0a64aef7b6f2723bfea77" },
   "codecompanion.nvim": { "branch": "main", "commit": "17f7cbb6cabdc12195f164acf4c59c7c7c205b64" },
   "fzf": { "branch": "master", "commit": "0076ec2e8d66a725555c256acbe46292019dc1a7" },
   "img-clip.nvim": { "branch": "main", "commit": "d8b6b030672f9f551a0e3526347699985a779d93" },

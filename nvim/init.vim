@@ -5,13 +5,6 @@ lua require("init")
 execute pathogen#infect()
 
 " * * * * * Great Mappings below: * * * * * "
-"
-" Mappings that make vim a lot cooler
-"
-
-let mapleader = "\<Space>"
-
-set mouse=
 
 "
 " Mappings for working with multiple tabs:
