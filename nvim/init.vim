@@ -1,5 +1,5 @@
 
-lua require("plugin.init")
+lua require("init")
 
 " Load pathogen plugins on startup:
 execute pathogen#infect()
@@ -34,7 +34,7 @@ noremap <Leader><C-l> :+tabmove<enter>
 "
 
 " Toggle to bash with <C-d>:
-noremap <C-d> :tab split<enter>:term<enter>
+noremap <C-d> :tab split<enter>:-tabmove<enter>:term<enter>
 
 " Force saving when file is opened read-only by accident:
 map <Leader>s :w !sudo tee %<enter>
@@ -100,6 +100,10 @@ color dracula
 " color default
 
 " * * * * * Personal configurations: * * * * * "
+
+" the highlight color is annoying when you don't need it,
+" so here I disable hlsearch so I can only activate it when I want:
+set nohlsearch
 
 " differentiate spaces and tabs
 set list
