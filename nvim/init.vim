@@ -26,9 +26,6 @@ noremap <Leader><C-l> :+tabmove<enter>
 " Cool features to have:
 "
 
-" Toggle to bash with <C-d>:
-noremap <C-d> :tab split<enter>:-tabmove<enter>:term<enter>
-
 " Force saving when file is opened read-only by accident:
 map <Leader>s :w !sudo tee %<enter>
 
