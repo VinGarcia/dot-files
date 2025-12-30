@@ -10,7 +10,32 @@ vim.api.nvim_create_autocmd("TermOpen", {
     callback = function()
         vim.opt_local.number = false
         vim.opt_local.relativenumber = false
-        vim.keymap.set("n", "<C-d>", ":close<enter>", { buffer = true })
+        vim.keymap.set("n", "<C-d>", "i<C-d>", { buffer = true })
+        vim.keymap.set("n", "<C-c>", "i<C-c>", { buffer = true })
+        vim.keymap.set("n", "<C-n>", ":tab split<enter>:-tabmove<enter>:term<enter>", { buffer = true })
+
+        -- Let <Esc> pass through to terminal
+        vim.keymap.set('t', '<Esc>', '<Esc>', {buffer = true, silent = true})
+
+        -- Use <C-Space> to exit terminal mode
+        vim.keymap.set('t', '<C-Space>', [[<C-\><C-n>]], {buffer = true, silent = true})
+
+        -- Pass through some other useful commands:
+
+        -- Block selection with Ctrl+b:
+        vim.keymap.set('t', '<C-b>', '<C-b>', { buffer = true, silent = true })
+
+        -- ctrl+c copies:
+        vim.keymap.set('t', '<C-c>', '<C-c>', { buffer = true, silent = true })
+
+        -- Ctrl+v pastes:
+        vim.keymap.set('t', '<C-v>', '<C-v>', { buffer = true, silent = true })
+
+        -- ctrl-q quits
+        vim.keymap.set('t', '<C-q>', '<C-q>', { buffer = true, silent = true })
+
+        -- ctrl-s saves
+        vim.keymap.set('t', '<C-s>', '<C-s>', { buffer = true, silent = true })
     end
 })
 
