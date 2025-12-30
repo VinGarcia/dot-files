@@ -18,6 +18,8 @@
   edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; vim `f`"
   add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
 	permission-reset = !git diff -p -R --no-ext-diff --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+	ck = checkout
+	st = status
 [url "ssh://git@gitlab.wearelayer.com/"]
 	insteadOf = https://gitlab.wearelayer.com/
 [pull]
