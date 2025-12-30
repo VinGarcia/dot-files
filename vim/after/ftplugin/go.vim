@@ -2,6 +2,7 @@
 let g:ale_linters = {
 \   'go': ['gobuild', 'golangci-lint'],
 \}
+let g:go_build_tags = "ksql_enable_kbuilder_experiment"
 
 " Vim-Go configs
 let g:go_fmt_command = "goimports"
