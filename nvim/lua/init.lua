@@ -91,3 +91,4 @@ vim.cmd([[cab cc CodeCompanion]])
 -- Expand 'E' into 'Explore' in the command line
 vim.cmd([[cab E Explore]])
 
+vim.keymap.set({ "n", "v" }, "<leader>w", ":q<enter>", { silent = true })

@@ -1,4 +1,5 @@
 
+" Load all lua configs first
 lua require("init")
 
 " Load pathogen plugins on startup:
