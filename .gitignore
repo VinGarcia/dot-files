@@ -2,3 +2,4 @@
 !*.vim
 documents/
 vim/.netrwhist
+**/work.vim
