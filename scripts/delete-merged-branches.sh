@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+git fetch origin --prune
+
 branches=$(git branch -r --merged origin/master |
   grep '^ *origin/' |
   grep -v '>' |
