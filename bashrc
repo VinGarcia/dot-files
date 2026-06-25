@@ -20,6 +20,8 @@ if command -v kubectl > /dev/null; then
 	source <(kubectl completion bash)
 fi
 
+alias it='git'
+
 if [ -f ~/.profile ]; then
   source ~/.profile
 fi
@@ -75,3 +77,6 @@ export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Disable Claude Code fullscreen/alt-screen so output stays in terminal scrollback (nvim :term)
+export CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1
