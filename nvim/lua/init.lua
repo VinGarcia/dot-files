@@ -13,6 +13,8 @@ vim.opt.mouse = ""
 
 require("config.lazy")
 
+vim.lsp.enable('millet')
+
 require("codecompanion").setup({
   adapters = {
     openai = function()
@@ -28,7 +30,7 @@ require("codecompanion").setup({
       return require("codecompanion.adapters").extend("anthropic", {
         schema = {
           model = {
-            default = "claude-sonnet-4-5-20250929",
+            default = "claude-opus-4-6-20250527",
           },
         },
       })

@@ -1,10 +1,18 @@
 return {
   {
     "olimorris/codecompanion.nvim",
-    opts = {},
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      -- Usa o Claude Code via ACP (autentica pelo plano Max, sem API key paga).
+      -- O token vem da env var CLAUDE_CODE_OAUTH_TOKEN (gerada com `claude setup-token`).
+      strategies = {
+        chat = { adapter = "claude_code" },
+        inline = { adapter = "claude_code" },
+        cmd = { adapter = "claude_code" },
+      },
     },
   },
   {
