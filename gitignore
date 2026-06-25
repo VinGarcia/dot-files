@@ -5,3 +5,5 @@
 makefile
 **/hide.*
 forks
+
+**/.claude/settings.local.json
