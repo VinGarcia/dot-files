@@ -82,9 +82,6 @@ noremap <Leader><Leader>n :ALENext<enter>
 nnoremap <Leader><Leader>p :FZF<enter>
 vnoremap <Leader><Leader>p :FZF<enter>
 
-" tig blame its not a plugin but very useful
-nnoremap <Leader><Leader>b :execute ":!tig blame % +" . line('.')<enter>
-
 " Dracula color scheme plugin:
 color dracula
 " Or if you don't want to install the dracula-vim plugin:

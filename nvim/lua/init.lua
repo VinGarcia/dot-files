@@ -94,3 +94,12 @@ vim.cmd([[cab cc CodeCompanion]])
 vim.cmd([[cab E Explore]])
 
 vim.keymap.set({ "n", "v" }, "<leader>w", ":q<enter>", { silent = true })
+
+-- tig blame: not a plugin but very useful
+vim.keymap.set("n", "<leader><leader>b", function()
+    local file = vim.fn.expand("%:p")
+    local lnum = vim.fn.line(".")
+    vim.cmd("tabnew")
+    vim.fn.termopen(string.format("tig blame %s +%d", vim.fn.shellescape(file), lnum))
+    vim.cmd("startinsert")
+end, { silent = true, desc = "tig blame current file at cursor line" })
