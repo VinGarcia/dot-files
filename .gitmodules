@@ -19,3 +19,9 @@
 [submodule "vim/bundle/fzf"]
 	path = vim/bundle/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "vim/bundle/vim-vue"]
+	path = vim/bundle/vim-vue
+	url = https://github.com/posva/vim-vue.git
+[submodule "nvim/pack/nvim/start/nvim-lspconfig"]
+	path = nvim/pack/nvim/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
