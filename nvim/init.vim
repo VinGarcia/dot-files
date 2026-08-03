@@ -27,8 +27,9 @@ noremap <Leader><C-l> :+tabmove<enter>
 " Cool features to have:
 "
 
-" Force saving when file is opened read-only by accident:
-map <Leader>s :w !sudo tee %<enter>
+" Force saving a read-only file is now handled in lua/init.lua
+" (<Leader>s), since `:w !sudo tee %` can't prompt for a password
+" without a tty under Neovim.
 
 " Easily toogle tab size from 2 to 4 spaces:
 map <Leader>, :set ts=2 sw=2 sts=2<enter>

@@ -53,6 +53,14 @@ return {
         cmd = {
           adapter = "claude_code",
         },
+        -- Diff keymaps: accept with `ga` and reject with `gr`
+        -- (defaults are g2/g3, which are farther from the home row).
+        shared = {
+          keymaps = {
+            accept_change = { modes = { n = "ga" } },
+            reject_change = { modes = { n = "gr" } },
+          },
+        },
       },
       display = {
         chat = {
